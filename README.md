@@ -1,65 +1,45 @@
-<p align="center"><img src="https://raw.githubusercontent.com/khnbutt118-dev/khnbutt118-dev/main/assets/medical-ai-banner.svg" alt="Hassan Butt — Pharmacy meets Artificial Intelligence" width="100%"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/khnbutt118-dev/khnbutt118-dev/main/assets/medical-ai-banner.svg" width="100%" alt="Hassan Butt — Pharmacy meets Artificial Intelligence"></p>
+<p align="center"><img src="https://img.shields.io/badge/SYNENT-Task%2002-087EAD?style=for-the-badge"><img src="https://img.shields.io/badge/Focus-Data%20Visualization-155E9A?style=for-the-badge"><img src="https://img.shields.io/badge/Level-Basic-0B719E?style=for-the-badge"></p>
+<p align="center"><a href="https://github.com/khnbutt118-dev">← Profile</a> · <a href="https://hassanbuttportfolio.vercel.app/">Portfolio</a> · <a href="https://www.linkedin.com/in/hassan-butt-ab0036334/">LinkedIn</a></p>
 
-<p align="center"><a href="https://github.com/khnbutt118-dev">← Back to GitHub profile</a> · <a href="https://hassanbuttportfolio.vercel.app/">Portfolio</a> · <a href="https://www.linkedin.com/in/hassan-butt-ab0036334/">LinkedIn</a></p>
+# 🌸 Iris · Exploratory Data Visualization
+**Synent Technologies · Data Science Internship · Task 2**
 
----
+<table><tr><td align="center"><h2>150</h2><sub>Samples</sub></td><td align="center"><h2>4</h2><sub>Features compared</sub></td><td align="center"><h2>0.96</h2><sub>Petal length-width correlation</sub></td></tr></table>
 
-# Data Visualization (Iris)
+## 📊 Visual gallery
 
-> Synent Technologies Data Science Internship | Task 2 (Basic level) | Author: Hassan Butt
+<p align="center"><img src="outputs/bar_chart_feature_means.png" alt="Mean feature values by species" width="82%"></p>
+<p align="center"><img src="outputs/scatter_plots.png" alt="Iris feature scatter plots" width="82%"></p>
+<p align="center"><img src="outputs/correlation_heatmap.png" alt="Iris feature correlation heatmap" width="68%"></p>
+<p align="center"><img src="outputs/pairplot.png" alt="Iris feature pairplot" width="82%"></p>
 
-## Problem statement
-Visualise patterns in the Iris dataset and compare features across the three species.
+## 🔎 Key findings
 
-## Dataset details
-- **Dataset:** Iris flower dataset
-- **Source:** https://www.kaggle.com/datasets/uciml/iris
-- **Size used:** 150 rows x 5 columns
+| Finding | Result |
+|:--|:--|
+| Strongest separating feature | **Petal length** |
+| Petal length vs width correlation | **0.96** |
+| Mean petal length · Setosa | 1.5 cm |
+| Mean petal length · Versicolor | 4.3 cm |
+| Mean petal length · Virginica | 5.6 cm |
 
-## Approach
-1. Bar chart of average feature values per species
-2. Histograms with density curves per feature
-3. Scatter plots of sepal and petal measurements
-4. Box plots, correlation heatmap and pair plot to compare features
-5. ANOVA F-scores to rank which feature separates the species best
+Petal length separated the three species most strongly in the ANOVA comparison (F = 1180); sepal width separated them least (F = 49). Setosa was completely separable from the other two species using petal length alone in this dataset.
 
-## Results
-| Metric | Value |
-|---|---|
-| Samples | 150 |
-| Features compared | 4 |
-| Best separating feature | petal_length |
-| Petal length-width correlation | 0.96 |
+## ▶️ Run
 
-**Key insights**
-
-- petal_length separates the three species best (ANOVA F = 1180); sepal_width separates them least (F = 49).
-- Petal length and petal width are strongly correlated (r = 0.96).
-- Setosa is completely separable from the other two species using petal length alone.
-- Average petal length: setosa 1.5 cm, versicolor 4.3 cm, virginica 5.6 cm.
-
-**Figures**
-
-![bar_chart_feature_means.png](outputs/bar_chart_feature_means.png)
-![histograms.png](outputs/histograms.png)
-![scatter_plots.png](outputs/scatter_plots.png)
-![boxplots_compare_features.png](outputs/boxplots_compare_features.png)
-![correlation_heatmap.png](outputs/correlation_heatmap.png)
-![pairplot.png](outputs/pairplot.png)
-
-## How to run
 ```bash
 pip install -r requirements.txt
 python main.py
 ```
 
-## Project structure
-```
-main.py            # full analysis / pipeline
-requirements.txt
-data/              # dataset (see data/README.md)
-outputs/           # figures, tables and reports
-```
+<details><summary><b>Dataset & analysis</b></summary>
 
-## Academic integrity
-All analysis code and write-ups in this repository were written by the author. The dataset belongs to its original creators (see link above).
+- Dataset: [Iris flower dataset](https://www.kaggle.com/datasets/uciml/iris)
+- 150 rows × 5 columns
+- Analysis includes species means, histograms, scatter plots, box plots, correlation heatmap, pair plot and ANOVA F-scores.
+- Outputs: `outputs/`
+</details>
+
+---
+<p align="center"><sub>Turning raw observations into clear visual insight.</sub></p>
